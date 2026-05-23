@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaces - Winged Delegates</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .space-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 60px;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(15, 52, 96, 0.8) 0%, rgba(10, 14, 39, 0.95) 100%);
+        }
+
+        .space-hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .space-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .space-card {
+            background: rgba(138, 43, 226, 0.15);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .space-card:hover {
+            border-color: #00d4ff;
+            background: rgba(0, 212, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .space-image-container {
+            width: 100%;
+            max-height: 500px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .space-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .space-details {
+            padding: 2rem;
+        }
+
+        .space-details h3 {
+            color: #00d4ff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .space-details p {
+            color: #b0b0b0;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .space-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        .space-info-item {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .space-info-item h4 {
+            color: #8a2be2;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .space-info-item p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .space-location {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(0, 212, 255, 0.1));
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .space-location h3 {
+            color: #00d4ff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .space-location p {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .space-hero {
+                min-height: 50vh;
+            }
+
+            .space-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .space-image-container {
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Winged Delegates</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#entry" class="nav-link">Entry</a></li>
+                <li class="nav-item"><a href="index.html#submission" class="nav-link">Contest Submission</a></li>
+                <li class="nav-item"><a href="spaces.html" class="nav-link">Spaces</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="space-hero">
+        <div class="space-hero-content">
+            <h2 class="hero-title">Exhibition Spaces</h2>
+            <p class="hero-subtitle">Where Art Meets Community</p>
+            <div class="hero-accent"></div>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+    <!-- Spaces Content -->
+    <section class="section about-section">
+        <div class="section-container">
+            <h2 class="section-title">Tenderloin Street-Visible Display</h2>
+            
+            <div class="space-gallery">
+                <!-- Main Space Card -->
+                <div class="space-card">
+                    <div class="space-image-container">
+                        <img src="https://images.unsplash.com/photo-1578321272176-c821ee5d7fa7?w=800&q=80" alt="Tenderloin Art Display Space - San Francisco">
+                    </div>
+                    <div class="space-details">
+                        <h3>Primary Exhibition Space</h3>
+                        <p>
+                            Located in the heart of Tenderloin, San Francisco, our flagship display space features a large street-visible TV mounted on a prominent storefront. This high-traffic location ensures that thousands of community members, visitors, and art enthusiasts pass by daily.
+                        </p>
+                        <p>
+                            The space showcases rotating exhibitions of winning artworks from our contests. Each piece is displayed prominently, giving local artists unprecedented visibility and transforming the urban landscape into an open-air gallery.
+                        </p>
+
+                        <div class="space-info-grid">
+                            <div class="space-info-item">
+                                <h4>Display Type</h4>
+                                <p>Street-Visible TV Screen</p>
+                            </div>
+                            <div class="space-info-item">
+                                <h4>Location</h4>
+                                <p>Tenderloin, San Francisco</p>
+                            </div>
+                            <div class="space-info-item">
+                                <h4>Visibility</h4>
+                                <p>24/7 Public Display</p>
+                            </div>
+                            <div class="space-info-item">
+                                <h4>Rotation Schedule</h4>
+                                <p>Monthly Updates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Space Experience Section -->
+            <div class="space-location">
+                <h3>🎨 The Winged Delegates Experience</h3>
+                <p>
+                    Our Tenderloin space represents more than just a display location—it's a statement about art's role in community transformation. By placing visual art on a street-visible TV, we democratize access to creative expression and celebrate the artistic voices of our community.
+                </p>
+                <p>
+                    Artists' work receives genuine public exposure, reaching audiences who might not typically visit traditional galleries. This is art where people live, work, and gather—making creativity an integral part of the urban fabric.
+                </p>
+            </div>
+
+            <!-- Space Features -->
+            <div style="margin-top: 3rem;">
+                <h3 style="color: #00d4ff; font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">Space Features</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div style="background: rgba(138, 43, 226, 0.15); border-left: 4px solid #8a2be2; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">High-Traffic Location</h4>
+                        <p style="color: #a0a0a0;">Positioned in a busy area with constant foot traffic, ensuring maximum visibility for displayed artworks.</p>
+                    </div>
+                    <div style="background: rgba(138, 43, 226, 0.15); border-left: 4px solid #8a2be2; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Professional Display</h4>
+                        <p style="color: #a0a0a0;">State-of-the-art TV screen with excellent image quality and clarity for optimal artwork presentation.</p>
+                    </div>
+                    <div style="background: rgba(138, 43, 226, 0.15); border-left: 4px solid #8a2be2; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Community Impact</h4>
+                        <p style="color: #a0a0a0;">Direct engagement with local residents and visitors, fostering meaningful connections between artists and audiences.</p>
+                    </div>
+                    <div style="background: rgba(138, 43, 226, 0.15); border-left: 4px solid #8a2be2; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Rotating Exhibition</h4>
+                        <p style="color: #a0a0a0;">Monthly rotations ensure fresh content and provide opportunities for multiple artists throughout the year.</p>
+                    </div>
+                    <div style="background: rgba(138, 43, 226, 0.15); border-left: 4px solid #8a2be2; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">24/7 Availability</h4>
+                        <p style="color: #a0a0a0;">Artworks are displayed around the clock, reaching audiences at all times of day and night.</p>
+                    </div>
+                    <div style="background: rgba(138, 43, 226, 0.15); border-left: 4px solid #8a2be2; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Accessibility</h4>
+                        <p style="color: #a0a0a0;">Located on a public street with wheelchair access, ensuring art is available to everyone in the community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="text-align: center; margin-top: 4rem;">
+                <p style="color: #b0b0b0; font-size: 1.2rem; margin-bottom: 2rem;">
+                    Interested in having your artwork displayed at our Tenderloin space?
+                </p>
+                <a href="index.html#submission" style="
+                    display: inline-block;
+                    padding: 1rem 2.5rem;
+                    background: linear-gradient(135deg, #8a2be2, #00d4ff);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 6px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: all 0.3s ease;
+                " onmouseover="this.style.boxShadow='0 10px 30px rgba(138, 43, 226, 0.5)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                    Submit Your Artwork
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Winged Delegates. All rights reserved. | Supporting artists in Tenderloin and beyond.</p>
+            <div class="footer-links">
+                <a href="index.html#entry">Entry</a>
+                <a href="index.html#submission">Submit</a>
+                <a href="spaces.html">Spaces</a>
+                <a href="index.html#about">About</a>
+                <a href="mailto:hello@wingeddelegates.art">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
