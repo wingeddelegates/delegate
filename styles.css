@@ -170,6 +170,31 @@ body {
     letter-spacing: 1px;
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: transparent;
+    color: #ffffff;
+    border: 1pt solid #ffffff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
 .hero-accent {
     width: 100px;
     height: 4px;
