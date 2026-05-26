@@ -624,14 +624,14 @@ body {
 }
 
 .footer-links a {
-    color: #ffffff;
-    text-decoration: underline;
+    color: #ffd700;
+    text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 600;
 }
 
 .footer-links a:hover {
-    color: #dddddd;
+    color: ffd700;
     text-decoration: underline;
 }
 
