@@ -49,12 +49,18 @@ body {
 
 .logo h1 {
     font-size: 1.8rem;
-    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+.logo h1 a {
+    color: #ff6b35;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo h1 a:hover {
+    color: #f7931e;
 }
 
 .nav-menu {
@@ -625,6 +631,25 @@ body {
 .contact-info a:hover {
     color: #4caf50;
     text-decoration: underline;
+}
+
+/* ============================================
+   SPACES SECTION
+   ============================================ */
+
+.spaces-title-section {
+    background: linear-gradient(135deg, #87CEEB 0%, #E0F6FF 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+}
+
+.spaces-title-section h2 {
+    color: #ff6b35;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 /* ============================================
