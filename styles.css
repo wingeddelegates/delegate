@@ -1,6 +1,7 @@
 /* ============================================
-   WINGED DELEGATES - WEBSITE STYLES (REDESIGNED)
-   Art-Focused, Accessible, High Contrast
+   WINGED DELEGATES - WEBSITE STYLES
+   BLACK BACKGROUND + WHITE TRANSLUCENT BOXES
+   YELLOW HIGHLIGHTS
    ============================================ */
 
 /* Reset & Base Styles */
@@ -16,8 +17,8 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 50%, #f0f4fa 100%);
-    color: #2c3e50;
+    background: #000000;
+    color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -30,12 +31,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%);
+    background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     z-index: 1000;
-    border-bottom: 3px solid #0066cc;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #ffd700;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -54,13 +55,13 @@ body {
 }
 
 .logo h1 a {
-    color: #ff6b35;
+    color: #ffd700;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .logo h1 a:hover {
-    color: #f7931e;
+    color: #ffea66;
 }
 
 .nav-menu {
@@ -89,7 +90,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #0066cc, #0052a3);
+    background: #ffd700;
     transition: width 0.3s ease;
 }
 
@@ -106,16 +107,15 @@ body {
    ============================================ */
 #hero {
     position: relative;
-    z-index: 2; /* Place hero above video */
-    min-height: 100vh; /* Full viewport height */
+    z-index: 2;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #fff;
     text-align: center;
-    background: rgba(0, 0, 0, 0.3); /* Optional: darken for readability */
-    /* Apply white color and drop shadow to all text inside */
+    background: rgba(0, 0, 0, 0.5);
     text-shadow: 0 2px 3px rgba(0,0,0,0.7);
 }
 
@@ -124,7 +124,9 @@ body {
     z-index: 2;
     padding: 2rem 3rem;
     border-radius: 1rem;
-    background: rgba(20,20,20,0.3); /* Optional: subtle background for readability */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 .hero-title,
@@ -136,21 +138,21 @@ body {
 .cta-button {
     margin-top: 2rem;
     padding: 1em 2em;
-    background: #ff6600;
-    color: #fff;
+    background: #ffd700;
+    color: #000000;
     border: none;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.25rem;
-    transition: background 0.3s;
-    /* Add text shadow for button text */
-    text-shadow: 0 2px 3px rgba(0,0,0,0.7);
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #ff8833;
-    color: #fff;
+    background: #ffea66;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
 }
 
 @media (max-width: 600px) {
@@ -158,6 +160,7 @@ body {
         padding: 1rem;
     }
 }
+
 /* ============================================
    SECTION STYLES
    ============================================ */
@@ -165,6 +168,7 @@ body {
 .section {
     padding: 5rem 2rem;
     position: relative;
+    background: #000000;
 }
 
 .section-container {
@@ -177,10 +181,7 @@ body {
     font-weight: 700;
     margin-bottom: 3rem;
     text-align: center;
-    background: linear-gradient(135deg, #1a3a52, #0066cc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffd700;
     position: relative;
     padding-bottom: 1.5rem;
 }
@@ -193,7 +194,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #0066cc, #0052a3);
+    background: #ffd700;
     border-radius: 2px;
 }
 
@@ -202,7 +203,7 @@ body {
    ============================================ */
 
 .entry-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+    background: #000000;
 }
 
 .entry-content {
@@ -230,7 +231,7 @@ body {
 .entry-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #34495e;
+    color: #ffffff;
     line-height: 1.8;
 }
 
@@ -253,8 +254,8 @@ body {
 }
 
 .feature {
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08), rgba(0, 82, 163, 0.08));
-    border-left: 4px solid #0066cc;
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #ffd700;
     padding: 1.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -262,10 +263,10 @@ body {
 }
 
 .feature:hover {
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.15), rgba(0, 82, 163, 0.15));
-    border-left-color: #0052a3;
+    background: rgba(255, 255, 255, 0.85);
+    border-left-color: #ffea66;
     transform: translateX(10px);
-    box-shadow: 0 5px 15px rgba(0, 102, 204, 0.15);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
 }
 
 .feature-icon {
@@ -276,11 +277,11 @@ body {
 .feature h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #0066cc;
+    color: #000000;
 }
 
 .feature p {
-    color: #555555;
+    color: #333333;
     font-size: 0.95rem;
 }
 
@@ -289,13 +290,13 @@ body {
    ============================================ */
 
 .submission-section {
-    background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+    background: #000000;
 }
 
 .submission-intro {
     font-size: 1.2rem;
     text-align: center;
-    color: #34495e;
+    color: #ffffff;
     margin-bottom: 3rem;
 }
 
@@ -307,8 +308,8 @@ body {
 }
 
 .info-card {
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.08), rgba(76, 175, 80, 0.05));
-    border: 2px solid #4caf50;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ffd700;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
@@ -316,40 +317,40 @@ body {
 }
 
 .info-card:hover {
-    border-color: #0066cc;
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08), rgba(0, 102, 204, 0.05));
+    border-color: #ffea66;
+    background: rgba(255, 255, 255, 0.85);
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.1);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
 }
 
 .info-card h3 {
-    color: #1a3a52;
+    color: #000000;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .info-value {
     font-size: 1.5rem;
-    color: #0066cc;
+    color: #000000;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .info-detail {
-    color: #555555;
+    color: #333333;
     font-size: 0.95rem;
 }
 
 .submission-form {
-    background: linear-gradient(135deg, rgba(26, 58, 82, 0.05), rgba(0, 102, 204, 0.05));
-    border: 2px solid #1a3a52;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ffd700;
     padding: 3rem;
     border-radius: 12px;
     margin-bottom: 2rem;
 }
 
 .submission-form h3 {
-    color: #1a3a52;
+    color: #000000;
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
@@ -361,7 +362,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #34495e;
+    color: #000000;
     font-weight: 600;
 }
 
@@ -373,7 +374,7 @@ body {
     background: #ffffff;
     border: 2px solid #ddd;
     border-radius: 6px;
-    color: #2c3e50;
+    color: #000000;
     font-size: 1rem;
     transition: all 0.3s ease;
     font-family: inherit;
@@ -381,23 +382,23 @@ body {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #999;
+    color: #888;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #0066cc;
-    background: #f7fbff;
-    box-shadow: 0 0 20px rgba(0, 102, 204, 0.2);
+    border-color: #ffd700;
+    background: #fffdf0;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .submit-btn {
     width: 100%;
     padding: 1rem;
-    background: linear-gradient(135deg, #0066cc, #0052a3);
-    color: white;
+    background: #ffd700;
+    color: #000000;
     border: none;
     border-radius: 6px;
     font-size: 1.1rem;
@@ -409,8 +410,9 @@ body {
 }
 
 .submit-btn:hover {
+    background: #ffea66;
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.4);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
 }
 
 .submit-btn:active {
@@ -418,7 +420,7 @@ body {
 }
 
 .form-note {
-    color: #666;
+    color: #555;
     font-size: 0.85rem;
     margin-top: 1rem;
     text-align: center;
@@ -429,24 +431,34 @@ body {
    ============================================ */
 
 .about-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+    background: #000000;
 }
 
 .about-text {
     margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #ffd700;
 }
 
 .about-text h3,
 .officers-section h3,
 .values-section h3,
 .contact-section h3 {
-    color: #1a3a52;
+    color: #000000;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
 
+.officers-section h3,
+.values-section h3 {
+    color: #ffd700;
+    text-align: center;
+}
+
 .about-text p {
-    color: #34495e;
+    color: #333333;
     font-size: 1.1rem;
     line-height: 1.8;
 }
@@ -462,8 +474,8 @@ body {
 }
 
 .officer-card {
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08), rgba(0, 82, 163, 0.08));
-    border: 2px solid #0066cc;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ffd700;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
@@ -471,10 +483,10 @@ body {
 }
 
 .officer-card:hover {
-    border-color: #4caf50;
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.08), rgba(76, 175, 80, 0.05));
+    border-color: #ffea66;
+    background: rgba(255, 255, 255, 0.85);
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.15);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
 }
 
 .officer-avatar {
@@ -483,27 +495,27 @@ body {
 }
 
 .officer-card h4 {
-    color: #1a3a52;
+    color: #000000;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .officer-role {
-    color: #555555;
+    color: #333333;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
 
 .officer-email a {
-    color: #0066cc;
+    color: #000000;
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 600;
+    border-bottom: 2px solid #ffd700;
 }
 
 .officer-email a:hover {
-    color: #4caf50;
-    text-decoration: underline;
+    color: #b8860b;
 }
 
 .values-section {
@@ -517,39 +529,41 @@ body {
 }
 
 .value-item {
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.08), rgba(76, 175, 80, 0.05));
-    border-left: 4px solid #4caf50;
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #ffd700;
     padding: 1.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .value-item:hover {
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08), rgba(0, 102, 204, 0.05));
-    border-left-color: #0066cc;
+    background: rgba(255, 255, 255, 0.85);
+    border-left-color: #ffea66;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
 }
 
 .value-item h4 {
-    color: #1a3a52;
+    color: #000000;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .value-item p {
-    color: #555555;
+    color: #333333;
     font-size: 0.95rem;
 }
 
 .contact-section {
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05));
-    border: 2px solid #4caf50;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ffd700;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
 }
 
 .contact-section p {
-    color: #34495e;
+    color: #333333;
     margin: 0.5rem 0;
 }
 
@@ -559,15 +573,15 @@ body {
 }
 
 .contact-info a {
-    color: #0066cc;
+    color: #000000;
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 600;
+    border-bottom: 2px solid #ffd700;
 }
 
 .contact-info a:hover {
-    color: #4caf50;
-    text-decoration: underline;
+    color: #b8860b;
 }
 
 /* ============================================
@@ -575,15 +589,16 @@ body {
    ============================================ */
 
 .spaces-title-section {
-    background: linear-gradient(135deg, #87CEEB 0%, #E0F6FF 100%);
+    background: rgba(255, 255, 255, 0.7);
     padding: 4rem 2rem;
     text-align: center;
     margin-bottom: 3rem;
     border-radius: 12px;
+    border: 2px solid #ffd700;
 }
 
 .spaces-title-section h2 {
-    color: #ff6b35;
+    color: #000000;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -594,8 +609,8 @@ body {
    ============================================ */
 
 .footer {
-    background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%);
-    border-top: 3px solid #0066cc;
+    background: #000000;
+    border-top: 3px solid #ffd700;
     padding: 2rem;
     text-align: center;
 }
@@ -626,7 +641,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #0066cc;
+    color: #ffea66;
     text-decoration: underline;
 }
 
@@ -708,6 +723,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 .bg-video {
     position: fixed;
     top: 0;
@@ -718,15 +734,14 @@ body {
     height: 100vh;
     object-fit: cover;
     z-index: 0;
-    pointer-events: none; /* Ensures clicks go through the video */
-}   
+    pointer-events: none;
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: -1;
-  pointer-events: none;
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    pointer-events: none;
 }
