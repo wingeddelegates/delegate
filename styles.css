@@ -128,7 +128,15 @@ body {
     max-width: 720px;
     width: 90%;
 }
-.hero-title,
+
+.hero-title {
+
+    font-family: Didot, "Times New Roman", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 6vw, 6rem);    
+    margin-bottom: 0.8rem;
+}
+
 .hero-subtitle {
     margin-bottom: 0.8rem;
 }
@@ -646,10 +654,6 @@ body {
         font-size: 0.9rem;
     }
 
-    .hero-title {
-        font-size: 3rem;
-    }
-
     .hero-subtitle {
         font-size: 1.2rem;
     }
@@ -695,11 +699,7 @@ body {
         gap: 1rem;
         font-size: 0.8rem;
     }
-
-    .hero-title {
-        font-size: 2rem;
-    }
-
+   
     .hero-subtitle {
         font-size: 1rem;
     }
