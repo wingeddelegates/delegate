@@ -212,14 +212,15 @@ body {
 }
 
 .entry-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
-    align-items: center;
 }
 
 .entry-text {
-    animation: slideInLeft 0.8s ease-out;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @keyframes slideInLeft {
